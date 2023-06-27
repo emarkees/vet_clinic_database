@@ -100,7 +100,7 @@ Open the project on your code editor
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add animals' owners database]**
+- [ ] **[Add animal's owners database]**
 - [ ] **[Add clinic employees database]**
 - [ ] **[Add visits database]**
 
