@@ -63,11 +63,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet Clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**[Vet Clinic]** is a Veterinary Database that stores information about animals, including their name, date of birth, number of escape attempts, neutered status, and weight in kilograms as a decimal value.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -208,17 +206,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Adeyemi Olusola**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@emarkees](https://github.com/emarkees)
+- Twitter: [@McEmarkees](https://twitter.com/McEmarkees)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/adeyemi-olusola)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
