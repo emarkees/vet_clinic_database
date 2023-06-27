@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Vet Clinic] <a name="about-project"></a>
+# 📖 [Vet_Clinic_database] <a name="about-project"></a>
 
-**[Vet Clinic]** is a Veterinary Database that stores animal information, including their name, date of birth, number of escape attempts, neutered status, and weight in kilograms.
+**[Vet Clinic_database]** is a Veterinary Database that stores animal information, including their name, date of birth, number of escape attempts, neutered status, and weight in kilograms.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,7 +41,7 @@
 
 - **Create a database named vet_clinic**
 - **Create animals table**
-- **Add columns to the animals table**
+- **Add columns to the animal's table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +77,7 @@ Clone this repository to your desired folder:
 Using the commands below:
 
 ```sh
-  git clone https://github.com/emarkees/vet_clinic.git
+  git clone (https://github.com/emarkees/vet_clinic_database.git)
 ```
 
 Open the project on your code editor
@@ -110,7 +110,7 @@ Open the project on your code editor
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/emarkees/vet_clinic/issues).
+Feel free to check the [issues page](https://github.com/emarkees/vet_clinic_database/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
