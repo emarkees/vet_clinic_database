@@ -14,7 +14,9 @@ BEGIN;
 
 UPDATE animals SET species = 'unspecified';
 
-ROLLBACK;
+/* To verify changes */
+
+SELECT * FROM animals; 
 
 COMMIT;
 
@@ -29,8 +31,6 @@ UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
 
 SELECT * FROM animals;
 
-ROLLBACK;
-
 COMMIT;
 
 /* To delete all records in a transaction */
@@ -40,8 +40,6 @@ BEGIN;
 DELETE FROM animals;
 
 ROLLBACK;
-
-COMMIT;
 
 /* To verify changes */
 
@@ -62,10 +60,6 @@ ROLLBACK TO SAVEPOINT del_dob_animals;
 UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 
 COMMIT;
-
-/* To verify changes */
-
-SELECT * FROM animals; 
 
 /* How many animals are there? */
 
