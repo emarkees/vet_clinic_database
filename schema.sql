@@ -31,6 +31,10 @@ CREATE TABLE species (
 ALTER TABLE animals
 ALTER COLUMN id SET DATA TYPE SERIAL PRIMARY KEY;
 
+/* drop species column */
+ALTER TABLE animals
+DROP COLUMN species;
+
 /* add species_id and owners_id for rerfrencing */
 
 ALTER TABLE animals
