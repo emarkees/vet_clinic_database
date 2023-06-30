@@ -97,14 +97,14 @@ GROUP BY species;
 
 /* What animals belong to Melody Pond? */
 
-SELECT animals.name
+SELECT animals
   FROM animals
 	JOIN owners ON animals.owner_id = owner_id
 	WHERE owners.full_name = 'Melody Pond';
 
 /* List of all animals that are pokemon (their type is Pokemon). */
 
-SELECT animals.name
+SELECT animals
   FROM animals
   JOIN species ON animals.species_id = species_id
   WHERE species.name = 'pokemon';
