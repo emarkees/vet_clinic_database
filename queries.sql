@@ -95,14 +95,14 @@ GROUP BY species;
 
 /* query using JOIN */
 
-/* Join owner_full_name using the owners_id */
+/* What animals belong to Melody Pond? */
 
 SELECT animals.name
   FROM animals
 	JOIN owners ON animals.owner_id = owner_id
 	WHERE owners.full_name = 'Melody Pond';
 
-	/* List animals that are pokemon */
+/* List of all animals that are pokemon (their type is Pokemon). */
 
 SELECT animals.name
   FROM animals
@@ -112,15 +112,15 @@ SELECT animals.name
 /* List all owners and their animals in cluding those with no animals */
 
 SELECT owners.full_name, animals.name  
-FROM owners
-LEFT JOIN animals ON owners.id = animals.owner_id;
+  FROM owners
+  LEFT JOIN animals ON owners.id = animals.owner_id;
 
 /* How many animals are there per species? */
 
 SELECT species.name, COUNT(animals.id) AS animal_count
-FROM species
-LEFT JOIN animals ON species.id = animals.species_id
-GROUP BY species.name;
+  FROM species
+  LEFT JOIN animals ON species.id = animals.species_id
+  GROUP BY species.name;
 
 /* List all Digimon owned by Jennifer Orwell. */
 
