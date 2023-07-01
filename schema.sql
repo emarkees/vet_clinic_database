@@ -35,7 +35,7 @@ ALTER COLUMN id SET DATA TYPE SERIAL PRIMARY KEY;
 ALTER TABLE animals
 DROP COLUMN species;
 
-/* add species_id and owners_id for rerfrencing */
+/* add species_id and owners_id for rerfrencing  CREATING A JOIN TABLE*/
 
 ALTER TABLE animals
 ADD COLUMN species_id INTEGER,
@@ -46,3 +46,33 @@ ADD CONSTRAINT fk_species
 ADD CONSTRAINT fk_owners
   FOREIGN KEY (owner_id)
   REFERENCES owners(id);
+
+/* create a vets table */
+
+CREATE TABLE vets (
+  id SERIAL NOT NULL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  age INTEGER NOT NULL,
+  date_of_graduation DATE
+);
+
+/* create a specialization table */
+
+CREATE TABLE specialization (
+  vet_id INTEGER,
+  species_id INTEGER,
+  PRIMARY KEY (vet_id, species_id),
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (species_id) REFERENCES species (id)
+);
+
+/* create a visits table */
+
+CREATE TABLE visits (
+  animal_id INTEGER,
+  vet_id INTEGER,
+  visit_date DATE,
+  PRIMARY KEY (animal_id, vet_id),
+  FOREIGN KEY (animal_id) REFERENCES animals (id),
+  FOREIGN KEY (vet_id) REFERENCES vets (id)
+);
