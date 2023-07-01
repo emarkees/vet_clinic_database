@@ -58,7 +58,7 @@ CREATE TABLE vets (
 
 /* create a specialization table */
 
-CREATE TABLE specialization (
+CREATE TABLE specializations (
   vet_id INTEGER,
   species_id INTEGER,
   PRIMARY KEY (vet_id, species_id),
@@ -68,11 +68,5 @@ CREATE TABLE specialization (
 
 /* create a visits table */
 
-CREATE TABLE visits (
-  animal_id INTEGER,
-  vet_id INTEGER,
-  visit_date DATE,
-  PRIMARY KEY (animal_id, vet_id),
-  FOREIGN KEY (animal_id) REFERENCES animals (id),
-  FOREIGN KEY (vet_id) REFERENCES vets (id)
-);
+
+
